@@ -86,3 +86,73 @@ nav::before {
   background-color: yellow; /* Setting color for the strip */
   z-index: 1; /* Ensuring the strip is below the links */
 }
+
+/* Styling for the search input */
+nav input[type="text"] {
+  padding: 8px;
+  margin-right: 10px; /* Adjust as needed */
+  border: none;
+  border-radius: 5px;
+  transition: all 0.3s ease; /* Smooth transition */
+}
+
+/* Styling for the navigation bar */
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Align items to the start and end */
+  background-color: #333;
+  overflow: hidden;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+}
+
+/* Styling for navigation links */
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+}
+
+nav ul li {
+  margin-right: 10px;
+  position: relative;
+}
+
+nav ul li:last-child {
+  margin-right: 0;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 14px 16px;
+}
+
+nav ul li a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background-color: #ff3c78;
+  transition: width 0.3s ease;
+  transform: translateX(-50%);
+}
+
+nav ul li a:hover::after {
+  width: 100%;
+}
+
+nav::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background-color: yellow;
+  z-index: 1;
+}
