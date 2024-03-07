@@ -1,47 +1,54 @@
+/* Styling for the navigation bar */
 nav {
-    background-color: #333;
-    overflow: hidden;
-  }
-  
-  nav ul {
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-  }
-  
-  nav ul li {
-    float: left;
-  }
-  
-  nav ul li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
-  
-  nav ul li a:hover {
-    background-color: #ddd;
-    color: black;
-  }
-  
-  .container {
-    text-align: center;
-    margin-top: 50px;
-  }
-  
-  .array-container {
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    height: 300px;
-  }
-  
-  .bar {
-    background-color: #007bff;
-    margin: 0 1px;
-    width: 20px;
-    transition: height 0.2s;
-  }
-  
+  background-color: #333; /* Set background color for the navigation bar */
+  overflow: hidden; /* Ensure any overflowing content is hidden */
+}
+
+/* Styling for the unordered list inside the navigation */
+nav ul {
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+  list-style-type: none; /* Remove default list styling */
+}
+
+/* Styling for each list item in the navigation */
+nav ul li {
+  float: left; /* Float the list items to the left to create a horizontal navigation */
+}
+
+/* Styling for the anchor tags (links) within the list items */
+nav ul li a {
+  display: block; /* Make the links block elements to fill the list items */
+  color: white; /* Set text color to white */
+  text-align: center; /* Center align the text within the links */
+  padding: 14px 16px; /* Add padding to create spacing around the text */
+  text-decoration: none; /* Remove default underline decoration from links */
+}
+
+/* Styling for the anchor tags on hover */
+nav ul li a:hover {
+  background-color: #ddd; /* Change background color on hover */
+  color: black; /* Change text color on hover */
+}
+
+/* Styling for the main container */
+.container {
+  text-align: center; /* Center align the content within the container */
+  margin-top: 50px; /* Add margin space on top */
+}
+
+/* Styling for the container of the array */
+.array-container {
+  display: flex; /* Use flexbox layout for the container */
+  justify-content: center; /* Center align the items horizontally */
+  align-items: flex-end; /* Align the items to the bottom of the container */
+  height: 300px; /* Set fixed height for the container */
+}
+
+/* Styling for the individual bars in the array */
+.bar {
+  background-color: #007bff; /* Set background color for the bars */
+  margin: 0 1px; /* Add margin to create spacing between bars */
+  width: 20px; /* Set fixed width for the bars */
+  transition: height 0.2s; /* Add smooth transition effect for height changes */
+}
