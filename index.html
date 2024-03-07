@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sorting Algorithm Visualization</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="#" onclick="selectSort('bubble')">Bubble Sort</a></li>
+      <li><a href="#" onclick="selectSort('insertion')">Insertion Sort</a></li>
+      <li><a href="#" onclick="selectSort('selection')">Selection Sort</a></li>
+      <!-- Add more sorting algorithms here -->
+    </ul>
+  </nav>
+  
+  <div class="container">
+    <div class="array-container" id="array-container"></div>
+    <button onclick="startSorting()">Sort</button>
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+</html>
