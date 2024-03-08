@@ -1,6 +1,7 @@
 /* Setting background color for the body */
 body {
   background-color: #333;
+  overflow: hidden;
 }
 
 #wrapper{
