@@ -97,11 +97,11 @@ function generateArray() {
   let container = document.getElementById('array-container');
   container.innerHTML = '';
   for (let i = 0; i < 20; i++) {
-    let height = Math.floor(Math.random() * 280) + 20; // Adjusted range to 20 - 300
+    let height = Math.floor(Math.random() * 300) + 20; // Adjusted range to 20 - 300
     let bar = document.createElement('div');
     bar.classList.add('bar');
     bar.style.height = height + 'px';
-    bar.style.width = '30px'; // Fixed width for all bars
+    bar.style.width = '40px'; // Fixed width for all bars
     container.appendChild(bar);
   }
 }
