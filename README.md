@@ -11,7 +11,7 @@ Visit: https://learn-algo-gold.vercel.app/
  
 ## How To Use
 
-To run locally run index.html file in browser
+To run locally open index.html file in browser
 
 ## Future Expectations
 - Implement and complete descriptions & tutorials of different algorithms
