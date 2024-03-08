@@ -5,9 +5,9 @@ Visit: https://learn-algo-gold.vercel.app/
 
 ## Algorithms Included
 - Sorting Category
-  - Bubble Sort
-  - Insertion Sort
-  - Selection Sort
+  - ```Bubble Sort```
+  - ```Insertion Sort```
+  - ```Selection Sort```
  
 ## How To Use
 
