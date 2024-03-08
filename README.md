@@ -1,5 +1,5 @@
 # Learn Algo VISUALISER
-This project is developed with simple html,css,js to help people to view algorithmic processes intuitively and entertainingly.
+This project is developed with simple ```html```,```css```,```js``` to help people to view algorithmic processes intuitively and entertainingly.
 
 Visit: https://learn-algo-gold.vercel.app/
 
