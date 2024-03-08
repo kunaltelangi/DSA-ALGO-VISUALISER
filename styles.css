@@ -156,3 +156,17 @@ nav::before {
   background-color: yellow;
   z-index: 1;
 }
+
+h5{
+  font-size: 20px;
+  font-family: 'Poppins', sans-serif; /* Setting font family */
+  font-style: normal;
+}
+
+.algoComplexity p {
+  margin-top: 9%; /* Adjust margin as needed */
+  color: white;
+  font-weight: normal;
+  text-align: center;
+}
+
