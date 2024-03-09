@@ -31,4 +31,4 @@ Visit: https://learn-algo-gold.vercel.app/
 - [ ] Adding the time complexity chart and some small info on each topics
 
 
-#### ENJOY THE BEAUTY OF ALGORITHMS!
+## ENJOY THE BEAUTY OF ALGORITHMS!
