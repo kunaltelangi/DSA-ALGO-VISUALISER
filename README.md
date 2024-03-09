@@ -1,7 +1,7 @@
 # <img src="https://media2.giphy.com/media/kkCsb4kKRQOzPPDBGL/giphy.gif?cid=ecf05e4731jqkbjr0mvdngqz6hi78xd0pkrlqhbhqq3webnf&rid=giphy.gif&ct=s" height="40px"> Learn Algo
 This project is developed with simple ```html```,```css```,```js``` to help people to view algorithmic processes intuitively and entertainingly.
 
->```Algorithm Visualizer``` is an interactive way and platform that visualize the algorithms in four main domain i.e. Trie data structure, Binary Search Tree, Path Finding and Sort Visual algorithm. The project focuses on visualizng 📊 the algorithm and try to make easier to understand and learn the algorithm.
+>```Lean Algo``` is an interactive way and platform that visualize the algorithms in four main domain i.e. Trie data structure, Binary Search Tree, Path Finding and Sort Visual algorithm. The project focuses on visualizng 📊 the algorithm and try to make easier to understand and learn the algorithm.
 
 
 Visit: https://learn-algo-gold.vercel.app/
