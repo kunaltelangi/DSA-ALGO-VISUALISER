@@ -9,6 +9,7 @@
 //     childrenCharacter : {} <-- this will store all children character.
 // }
 
+
 // Tree will be stored as object.
 let data = { nodeId: 0, value: 'root', endOfWord: false, children: [], childrenCharacter: {} };
 // Current available id for the node. We will give each node a unique id and put this as their html element "id".
@@ -16,7 +17,7 @@ let curId = 1;
 
 const width = Math.max(100, window.innerWidth - 50);
 const height = Math.max(100, window.innerHeight - 200);
-const nodeRadius = 20;
+const nodeRadius = 28;
 const LinkStroke = 4;
 const animationDuration = 500;
 const padding = 40;
