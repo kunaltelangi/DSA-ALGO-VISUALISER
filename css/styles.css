@@ -1,8 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Raleway&display=swap");
 
-body{
-  overflow: hidden;
-}
+
 * {
   padding: 0;
   margin: 0;
@@ -10,7 +9,7 @@ body{
 }
 
 body {
-  background: #333 ;
+  background: rgb(31, 31, 31) ;
   background-position: center;
   background-repeat: no-repeat;
   box-shadow: inset 0 70px 80px rgb(0 0 0 / 21%);
@@ -19,7 +18,6 @@ body {
 .back-button:hover {
   background-color: #0056b3;
 }
-
 
 
 /* =============  Scrollbar  ============= */
@@ -46,55 +44,61 @@ body {
 #header {
   width: 1400px;
   margin-top: 1rem;
-
   box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.363);
   border-radius: 10px;
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: rgb(216, 50, 75);
   overflow: hidden;
-  display: flex;
-  justify-content: center;
-  border-top: 1px solid rgba(255, 255, 255, 0.4);
-  border-left: 1px solid rgba(255, 255, 255, 0.4);
+  justify-content: center; /* Center all items horizontally */
   font-family: 'Poppins', sans-serif;
   backdrop-filter: blur(8px);
-
   display: flex; /* Use flexbox layout */
-  justify-content: space-between; /* Distribute space evenly between items */
-  align-items: center; /* Align items vertically */
-  width: 100%; /* Make the header fill the width of the screen */
+  align-items: center; /* Center items vertically */
 }
 
 #header a {
   text-decoration: none; 
 }
+
 #title {
   text-align: center;
   font-size: 2rem;
-  /* color: rgb(90, 0, 90) ; */
-  color: rgb(244, 244, 244);
+  font-weight: bolder;
+  color: rgb(255, 255, 255);
   padding: 1rem 0;
   font-weight: bold;
   margin: 0;
   padding: 10px; /* Add padding for better spacing */
-  margin-left: 860px;
+  font-family: 'Raleway', sans-serif;
+  flex-grow: 1; /* Let the title take up remaining space */
+  display: flex; /* Use flexbox layout */
+  justify-content: center; /* Center horizontally */
 }
 
+
 #container {
-  display: flex;
-  width: 1000px;
+  max-width: 1000px; /* Set maximum width */
+  width: 100%; /* Ensure container fills available width */
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   text-align: center;
+  overflow-x: auto; /* Enable horizontal scrolling when needed */
 }
+
+@media (max-width: 1050px) {
+  #container {
+    padding: 0 1rem; /* Add horizontal padding for smaller screens */
+  }
+}
+
 
 .algo-container {
   width: 25rem;
   padding: 1rem;
   margin: 1rem;
-  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.363);
+  box-shadow: 10px 10px 30px rgba(189, 157, 157, 0.363);
   border-radius: 10px;
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: rgb(86, 85, 127);
   overflow: hidden;
   display: flex;
   justify-content: center;
