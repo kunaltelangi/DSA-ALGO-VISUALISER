@@ -9,10 +9,18 @@
 }
 
 body {
-  background: rgb(31, 31, 31) ;
-  background-position: center;
-  background-repeat: no-repeat;
-  box-shadow: inset 0 70px 80px rgb(0 0 0 / 21%);
+  margin: 0;
+  background: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
 }
 
 .back-button:hover {
