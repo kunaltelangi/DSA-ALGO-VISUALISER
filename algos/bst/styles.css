@@ -197,6 +197,56 @@ line {
   animation: filling 1s linear forwards;
 }
 
+@media screen and (max-width: 1400px) {
+  #header {
+    width: 100%;
+    padding: 0.5rem;
+  }
+
+  #OperationContainer {
+    position: relative;
+    top: auto;
+    left: auto;
+    margin-top: 1rem;
+  }
+
+  #OperationContainer button,
+  #OperationContainer input {
+    width: auto;
+  }
+
+  #title {
+    font-size: 1.5rem;
+  }
+
+  .Canvas {
+    width: 100%;
+    height: auto;
+    max-height: calc(100vh - 200px); /* Adjust height based on your header and indicator container heights */
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .indicator_container {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem;
+  }
+
+  .indicator {
+    margin-bottom: 0.5rem;
+  }
+
+  .indicator_block {
+    margin-right: 0.5rem;
+  }
+
+  .indicator text {
+    font-size: 16px;
+  }
+}
+
+
 @keyframes filling {
   from {
     stroke-dashoffset: 500;
