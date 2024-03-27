@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Learn Algo</title>
+  <link rel="stylesheet" type="text/css" href="home.css">
+  <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+</head>
+<body class="fade-in"> <!-- Add fade-in class to body by default -->
+  <canvas id="canvas"></canvas>
+  <div class="text-box">
+    <div class="heading">Welcome To Learn Algo</div>
+    <div class="button-wrapper">
+      <a href="PageAfterExplore.html" class="button" id="explore-button">Explore</a>
+    </div>
+  </div>
+  <!-- Linking of javascript file -->
+  <script src="particles.js"></script>
+  <script>
+    // JavaScript to handle fade-in and fade-out transitions
+    window.addEventListener('load', function() {
+      document.body.classList.remove('fade-in'); // Remove fade-in class immediately when page loads
+    });
+
+    document.getElementById('explore-button').addEventListener('click', function(event) {
+      event.preventDefault(); // Prevents the default behavior of the link
+
+      // Add fade-out class to initiate fade-out transition
+      document.body.classList.add('fade-out');
+
+      // Redirect to the explore page after a short delay
+      setTimeout(function() {
+        window.location.href = event.target.href;
+      }, 1000); // Delay should match the duration of fade-out transition
+
+      // Remove fade-out class after a slightly longer delay
+      setTimeout(function() {
+        document.body.classList.remove('fade-out');
+      }, 1500); // Adjust timing to ensure smooth transition
+    });
+  </script>
+</body>
+</html>

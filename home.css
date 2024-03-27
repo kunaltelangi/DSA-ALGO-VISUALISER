@@ -1,0 +1,91 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  background: black;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative; /* Ensure proper positioning */
+}
+
+body.fade-in {
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+body.fade-in-active {
+  opacity: 1;
+}
+body.fade-out {
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+body.fade-out-active {
+  opacity: 1;
+}
+
+canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.text-box {
+  font-size: 60px;
+  font-family: 'Raleway', sans-serif;
+  letter-spacing: 7px;
+  word-spacing: 12px;
+  text-transform: uppercase;
+  color: rgb(238, 238, 238);
+  z-index: 1; /* Ensure text appears above canvas */
+}
+
+.button-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  flex-direction: row;
+}
+
+.button {
+  display: inline-block;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 15px;
+  margin-left: 20px;
+  margin-right: 20px;
+  word-spacing: normal;
+  letter-spacing: 5px;
+  border: 1px solid white;
+  background: rgb(119, 132, 210);
+  cursor: pointer;
+  text-decoration: none; /* Remove underline */
+  transition: background-color 0.3s ease; /* Smooth transition for background color */
+}
+
+.button:hover {
+  color: white;
+  background-color: rgb(218, 33, 137);
+}
+
+.heading {
+  font-size: 70px;
+  font-weight: bold;
+  margin-top: 50px; /* Adjust as needed */
+  opacity: 0; /* Initially hide the text */
+  animation: fadeIn 1s ease-in-out forwards; /* Apply animation */
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
