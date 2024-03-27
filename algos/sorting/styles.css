@@ -41,7 +41,8 @@ body {
   justify-content: space-between;
   border-top: 1px solid rgba(255, 255, 255, 0.4);
   border-left: 1px solid rgba(255, 255, 255, 0.4);
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Raleway', sans-serif;
+  font-weight: normal;
   backdrop-filter: blur(8px);
 }
 
@@ -166,7 +167,7 @@ a {
   font-size: 1rem;
   color: white;
   border-radius: 5px;
-  background: #161824;
+  background: #44454c;
   letter-spacing: 1.2px;
   border: none;
   outline: none;
@@ -177,6 +178,8 @@ a {
 .button:hover {
   cursor: pointer;
   transform: scale(1.1) perspective(1px);
+  color: white;
+  background-color: rgb(218, 33, 137);
 }
 
 #buttonsdiv {
@@ -199,9 +202,15 @@ a {
   margin-top: 0px;
   font-size: 0.9rem;
 }
-
+#generateButton{
+  color: rgb(255, 255, 255);
+  background: #6536c2;
+}
 #generateButton:hover {
+  border-color: #000;
   transform: scale(1.08) perspective(1px);
+  color: rgb(0, 0, 0);
+  background: rgb(206, 199, 64);
 }
 
 @media (max-width: 900px) {
