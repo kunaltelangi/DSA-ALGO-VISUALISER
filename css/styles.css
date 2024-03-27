@@ -1,16 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 @import url("https://fonts.googleapis.com/css?family=Raleway&display=swap");
 
-
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  overflow: hidden;
 }
 
 body {
   margin: 0;
   background: black;
+  font-family: 'Poppins', sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -27,8 +28,7 @@ canvas {
   background-color: #0056b3;
 }
 
-
-/* =============  Scrollbar  ============= */
+/* ============= Scrollbar ============= */
 ::-webkit-scrollbar {
   width: 4px;
 }
@@ -39,28 +39,25 @@ canvas {
   background: white;
 }
 
-
-
 #main {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  display: flex;
 }
 
 #header {
-  width: 1400px;
+  width: 100%;
+  max-width: 1400px;
   margin-top: 1rem;
   box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.363);
   border-radius: 10px;
   background-color: rgb(216, 50, 75);
   overflow: hidden;
-  justify-content: center; /* Center all items horizontally */
-  font-family: 'Poppins', sans-serif;
+  justify-content: center;
   backdrop-filter: blur(8px);
-  display: flex; /* Use flexbox layout */
-  align-items: center; /* Center items vertically */
+  display: flex;
+  align-items: center;
 }
 
 #header a {
@@ -75,30 +72,22 @@ canvas {
   padding: 1rem 0;
   font-weight: bold;
   margin: 0;
-  padding: 10px; /* Add padding for better spacing */
+  padding: 10px;
   font-family: 'Raleway', sans-serif;
-  flex-grow: 1; /* Let the title take up remaining space */
-  display: flex; /* Use flexbox layout */
-  justify-content: center; /* Center horizontally */
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
 }
 
-
 #container {
-  max-width: 1000px; /* Set maximum width */
-  width: 100%; /* Ensure container fills available width */
+  max-width: 1000px;
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   text-align: center;
-  overflow-x: auto; /* Enable horizontal scrolling when needed */
+  overflow-x: auto;
 }
-
-@media (max-width: 1050px) {
-  #container {
-    padding: 0 1rem; /* Add horizontal padding for smaller screens */
-  }
-}
-
 
 .algo-container {
   width: 25rem;
@@ -112,22 +101,14 @@ canvas {
   justify-content: center;
   border-top: 1px solid rgba(255, 255, 255, 0.5);
   border-left: 1px solid rgba(255, 255, 255, 0.5);
-  font-family: 'Poppins', sans-serif;
   backdrop-filter: blur(5px);
-
-  transition: all 0.3s ease-in-out; /* Transition for smooth effect */
+  transition: all 0.3s ease-in-out;
 }
 
 .algo-container:hover {
-  transform: scale(1.05); /* Scale up slightly on hover */
-  box-shadow: 15px 15px 30px rgba(0, 0, 0, 0.5); /* Add shadow on hover */
+  transform: scale(1.05);
+  box-shadow: 15px 15px 30px rgba(0, 0, 0, 0.5);
 }
-
-/* .imageContainer:hover img{
-  scale: calc(105%);
-  transition: all 0.3s ease-in-out;
-} */
-
 
 .image {
   width: 100%;
@@ -135,42 +116,46 @@ canvas {
   border-radius: 5px;
 }
 
-
 .algo-container a {
   text-decoration: none;
   color: #dcebff;
   font-size: 20px;
   margin: 0;
 }
+
 .algo-container a .description {
   box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.065);
   border-radius: 5px;
   background-color: rgba(255, 255, 255, 0.062);
   border-top: 1px solid rgba(255, 255, 255, 0.3);
   border-left: 1px solid rgba(255, 255, 255, 0.3);
-  font-family: 'Poppins', sans-serif;
   backdrop-filter: blur(5px);
-  
   padding: 1rem;
 }
+
 .algo-container a .description p:nth-child(1) {
   margin-bottom: 0.2rem;
   font-size: 1.1rem;
 }
+
 .algo-container a .description p:nth-child(2) {
   font-size: 0.8rem;
 }
 
 @media (max-width: 1050px) {
   #container {
-    width: 100%;
+    padding: 0 1rem;
   }
 }
+
 @media (max-width: 1400px) {
   #header {
     width: 95%;
   }
-  
 }
 
-
+@media (max-width: 800px) {
+  .algo-container {
+    width: calc(100% - 2rem);
+  }
+}
