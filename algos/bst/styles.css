@@ -1,22 +1,22 @@
+/* Import Google Fonts */
 @import url("https://fonts.googleapis.com/css?family=Raleway&display=swap");
 
-
-
+/* Reset CSS */
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 
+/* Body Styles */
 body {
   background: rgb(31, 31, 31);
   box-shadow: inset 0 70px 80px rgb(0 0 0 / 21%);
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-weight: normal;
-
 }
 
-/* =============  Scrollbar  ============= */
+/* Scrollbar Styles */
 ::-webkit-scrollbar {
   width: 4px;
 }
@@ -27,20 +27,18 @@ body {
   background: white;
 }
 
-
-
+/* Container Styles */
 .container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  display: flex;
-
 }
+
+/* Header Styles */
 #header {
   width: 1400px;
   margin-top: -8rem;
-
   box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.363);
   border-radius: 10px;
   background-color: rgb(216, 50, 75);
@@ -56,24 +54,21 @@ body {
 }
 #header a {
   text-decoration: none;
-  
 }
 #title {
   text-align: center;
   font-size: 2rem;
-  /* color: rgb(90, 0, 90) ; */
   color: rgb(244, 244, 244);
   padding: 1rem 0;
   font-weight: bold;
 }
 
-
+/* Operation Container Styles */
 #OperationContainer {
   position: absolute;
   top: 25px;
   left: 20px;
 }
-
 #OperationContainer button {
   background: #161824;
   margin-left: 0.5rem;
@@ -96,8 +91,6 @@ body {
 #OperationContainer input:focus {
   border: 1px solid rgb(183, 0, 255);
 }
-
-
 #InsertNodeField,
 #DeleteNodeField {
   width: 120px;
@@ -106,6 +99,7 @@ body {
   margin-left: 10px;
 }
 
+/* Canvas Styles */
 .Canvas {
   width: 100%;
   height: 100vh;
@@ -116,61 +110,53 @@ body {
   position: relative;
 }
 
-
+/* Indicator Container Styles */
 .indicator_container {
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: cornflowerblue;
-  padding: 0.5rem 1rem ;
+  padding: 0.5rem 1rem;
   font-size: 0.9rem;
   gap: 2rem;
   width: 800px;
 }
 
-.indicator  {
+.indicator {
   display: flex;
   align-items: center;
 }
 .indicator_block {
   margin-right: 0.3rem;
 }
-.indicator  #edge{
+.indicator #edge {
   height: 0.2rem;
   width: 2.5rem;
   background-color: #099691;
   box-shadow: 0 0 1px #333;
 }
-
-.indicator  #node {
+.indicator #node {
   height: 1.5rem;
   width: 1.5rem;
   border-radius: 50%;
   background-color: #25d003;
   box-shadow: 0 0 1px #333;
 }
-
-
-
-
-
-
-
 .indicator text {
   font-size: 20px !important;
 }
 
+/* SVG Styles */
 svg {
   margin-top: 5px;
   width: 100%;
-  /* max-width: 1200px; */
   height: 100%;
   overflow: scroll;
 }
 
+/* Node Styles */
 .node circle {
   fill: #29e703;
-  /* fill-opacity: 0.6; */
   stroke: #168700;
   stroke-width: 1px;
 }
@@ -178,50 +164,39 @@ svg {
   font-size: 22px;
   fill: #ffffff;
 }
-
 .highlightedNode circle {
   fill: red;
   stroke: red;
   stroke-width: 1px;
 }
-
-.null-node,
-.null-link {
-  visibility: hidden;
-}
-
 line {
   stroke: #099b96;
 }
-
 .LinkAnimation {
   stroke: red;
   stroke-dasharray: 500;
   animation: filling 1s linear forwards;
 }
 
+/* Responsive Styles */
 @media screen and (max-width: 1400px) {
   #header {
     width: 100%;
     padding: 0.5rem;
   }
-
   #OperationContainer {
     position: relative;
     top: auto;
     left: auto;
     margin-top: 1rem;
   }
-
   #OperationContainer button,
   #OperationContainer input {
     width: auto;
   }
-
   #title {
     font-size: 1.5rem;
   }
-
   .Canvas {
     width: 100%;
     height: auto;
@@ -235,21 +210,18 @@ line {
     align-items: flex-start;
     padding: 1rem;
   }
-
   .indicator {
     margin-bottom: 0.5rem;
   }
-
   .indicator_block {
     margin-right: 0.5rem;
   }
-
   .indicator text {
     font-size: 16px;
   }
 }
 
-
+/* Keyframe Animation */
 @keyframes filling {
   from {
     stroke-dashoffset: 500;
