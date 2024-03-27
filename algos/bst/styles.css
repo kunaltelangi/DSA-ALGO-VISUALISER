@@ -39,7 +39,7 @@ body {
 }
 #header {
   width: 1400px;
-  margin-top: 1rem;
+  margin-top: -8rem;
 
   box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.363);
   border-radius: 10px;
@@ -50,7 +50,8 @@ body {
   justify-content: center;
   border-top: 1px solid rgba(255, 255, 255, 0.4);
   border-left: 1px solid rgba(255, 255, 255, 0.4);
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Raleway', sans-serif;
+  font-weight: normal;
   backdrop-filter: blur(8px);
 }
 #header a {
