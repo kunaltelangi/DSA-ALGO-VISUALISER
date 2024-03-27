@@ -38,7 +38,7 @@ body {
 /* Header Styles */
 #header {
   width: 1400px;
-  margin-top: -8rem;
+  margin-top: 1rem;
   box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.363);
   border-radius: 10px;
   background-color: rgb(216, 50, 75);
