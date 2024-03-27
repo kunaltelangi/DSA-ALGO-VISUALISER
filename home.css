@@ -10,6 +10,21 @@ body {
   position: relative; /* Ensure proper positioning */
 }
 
+body.fade-in {
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+body.fade-in-active {
+  opacity: 1;
+}
+body.fade-out {
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+body.fade-out-active {
+  opacity: 1;
+}
+
 canvas {
   position: absolute;
   top: 0;
@@ -45,7 +60,7 @@ canvas {
   word-spacing: normal;
   letter-spacing: 5px;
   border: 1px solid white;
-  background: black;
+  background: rgb(119, 132, 210);
   cursor: pointer;
   text-decoration: none; /* Remove underline */
   transition: background-color 0.3s ease; /* Smooth transition for background color */
@@ -53,7 +68,7 @@ canvas {
 
 .button:hover {
   color: white;
-  background-color: #25b3c3;
+  background-color: rgb(218, 33, 137);
 }
 
 .heading {
