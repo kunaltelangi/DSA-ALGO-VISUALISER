@@ -122,7 +122,7 @@ body {
   font-size: 1rem !important;
   color: white;
   border-radius: 5px;
-  background: #161824;
+  background: #44454c;
   letter-spacing: 1.2px;
   border: none;
   outline: none;
@@ -131,6 +131,8 @@ body {
 .button:hover {
   cursor: pointer;
   transform: scale(1.1) perspective(1px);
+  background-color: rgb(218, 33, 137);
+  color: white;
 }
 
 #visualizeButton {
